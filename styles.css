@@ -1,0 +1,416 @@
+/* ========================================
+   JOÃO PEDRO R. ALVES ADVOCACIA — styles.css
+   CSS não-crítico (carregado de forma assíncrona)
+   ======================================== */
+
+/* ===== RESET & BASE ===== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #060d1a;
+    color: #F3F4F6;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===== TYPOGRAPHY ===== */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #FFFFFF;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #D4AF37;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #b5952f;
+}
+
+a:focus-visible {
+    outline: 2px solid #D4AF37;
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* ===== LAYOUT ===== */
+section {
+    padding: 100px 5%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ===== SECTION HEADER ===== */
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    color: #D4AF37;
+    margin-bottom: 15px;
+}
+
+.section-header p {
+    color: #9CA3AF;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ===== GRID SYSTEM ===== */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* ===== CARDS ===== */
+.card {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    padding: 40px 30px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(212, 175, 55, 0.3);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.card:focus-within {
+    outline: 2px solid #D4AF37;
+    outline-offset: 2px;
+}
+
+.card-icon {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+}
+
+.card p {
+    color: #9CA3AF;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+/* ===== HERO FEATURES (badges já no critical CSS) ===== */
+.hero-features {
+    display: flex;
+    gap: 40px;
+    margin-top: 60px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 30px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.feature-icon {
+    color: #D4AF37;
+    font-size: 24px;
+}
+
+.feature-text {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #E5E7EB;
+}
+
+/* ===== ABOUT BOX ===== */
+.about-box {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    padding: 50px;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #030812;
+    padding: 60px 5% 30px;
+    border-top: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-col h4 {
+    color: #D4AF37;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.footer-col p,
+.footer-col a {
+    color: #9CA3AF;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    display: block;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-col a:hover {
+    color: #D4AF37;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color: #6B7280;
+    font-size: 0.8rem;
+}
+
+/* ===== BG LIGHT SECTIONS ===== */
+.bg-light {
+    background-color: #0d213f;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+    .section-header h2 {
+        font-size: 2.2rem;
+    }
+    
+    .hero h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 80px 5%;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .section-header p {
+        font-size: 1rem;
+    }
+    
+    .grid-3 {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .card {
+        padding: 30px 24px;
+    }
+    
+    .about-box {
+        padding: 30px 24px;
+    }
+    
+    .hero-features {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .footer-col p,
+    .footer-col a {
+        display: inline-block;
+        margin-right: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .footer-col a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero .hero-sub {
+        font-size: 1rem;
+    }
+    
+    .btn-primary {
+        padding: 16px 28px;
+        font-size: 1rem;
+    }
+    
+    .badge {
+        font-size: 0.7rem;
+        padding: 6px 10px;
+    }
+}
+
+/* ===== ACCESSIBILITY ===== */
+/* Skip link */
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #D4AF37;
+    color: #0A192F;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 600;
+    z-index: 10000;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+/* Focus visible para todos os elementos interativos */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+    outline: 2px solid #D4AF37;
+    outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    :root {
+        --gold: #FFD700;
+        --gold-hover: #FFC107;
+        --text-light: #FFFFFF;
+        --text-muted: #CCCCCC;
+    }
+    
+    .card {
+        border-width: 2px;
+    }
+    
+    .btn-primary {
+        border: 2px solid currentColor;
+    }
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    header,
+    .hero-badges,
+    .btn-primary,
+    footer {
+        display: none !important;
+    }
+    
+    body {
+        background: white;
+        color: black;
+        font-size: 12pt;
+    }
+    
+    .hero {
+        min-height: auto;
+        padding: 2rem 0;
+        background: none;
+    }
+    
+    .hero h1 {
+        color: black;
+        font-size: 24pt;
+    }
+    
+    .hero .hero-sub {
+        color: #333;
+    }
+    
+    section {
+        padding: 2rem 0;
+        page-break-inside: avoid;
+    }
+    
+    .card {
+        border: 1px solid #ddd;
+        background: white;
+        page-break-inside: avoid;
+    }
+    
+    .card h3 {
+        color: black;
+    }
+    
+    .card p {
+        color: #333;
+    }
+    
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+    
+    a[href^="http"]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        font-weight: normal;
+    }
+}

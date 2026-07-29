@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="João Pedro R. Alves — Sociedade Individual de Advocacia. Atuação em desbloqueio judicial de contas (SISBAJUD) e fraudes bancárias (PIX). OAB/RS 129.198. Atendimento digital em todo o Brasil.">
+    <meta name="keywords" content="advogado, desbloqueio judicial, SISBAJUD, fraude PIX, direito bancário, bloqueio de conta, recuperação de valores, OAB/RS 129.198">
+    <meta name="author" content="João Pedro R. Alves">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="João Pedro R. Alves | Atuação em Desbloqueio Judicial e Fraudes Bancárias (PIX)">
+    <meta property="og:description" content="Sociedade Individual de Advocacia com atuação concentrada em desbloqueio de contas via SISBAJUD e fraudes envolvendo PIX. OAB/RS 129.198. Atendimento digital em todo o Brasil.">
+    <meta property="og:url" content="https://www.joaopedroralvesadvocacia.com.br/">
+    <meta property="og:site_name" content="João Pedro R. Alves Advocacia">
+    <meta property="og:locale" content="pt_BR">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="João Pedro R. Alves | Desbloqueio Judicial e Fraudes PIX">
+    <meta name="twitter:description" content="Atuação em desbloqueio de contas (SISBAJUD) e fraudes bancárias (PIX). OAB/RS 129.198. Atendimento digital em todo o Brasil.">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.joaopedroralvesadvocacia.com.br/">
+    
+    <!-- Preconnect para fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"></noscript>
+    
+    <!-- CSS Externo -->
+    <link rel="preload" href="/styles.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/styles.css"></noscript>
+    
+    <!-- Favicon (SVG - moderno, escalável) -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <!-- Apple Touch Icon (SVG) -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.svg">
+    <!-- Manifest para PWA (opcional) -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <title>João Pedro R. Alves | Atuação em Desbloqueio Judicial e Fraudes Bancárias (PIX)</title>
+
+    <!-- CSS Crítico (Above-the-fold) -->
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        :root{--primary:#0A192F;--primary-light:#0d213f;--gold:#D4AF37;--gold-hover:#b5952f;--text-light:#F3F4F6;--text-muted:#9CA3AF;--white:#FFFFFF}
+        body{font-family:'Inter',sans-serif;background-color:#060d1a;color:var(--text-light);line-height:1.6}
+        h1,h2,h3{font-family:'Playfair Display',serif;font-weight:700}
+        header{background-color:rgba(10,25,47,0.98);padding:20px 5%;position:fixed;width:100%;top:0;z-index:1000;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(212,175,55,0.15);backdrop-filter:blur(10px)}
+        .logo-container{text-decoration:none;display:flex;align-items:center;gap:15px}
+        .logo-mark{position:relative;width:85px;height:45px;font-family:'Playfair Display',serif;font-weight:700;color:var(--gold)}
+        .logo-mark span{position:absolute}
+        .logo-j{font-size:34px;left:0;bottom:2px;z-index:1}
+        .logo-p{font-size:52px;left:16px;bottom:-4px;z-index:3;text-shadow:2px 0 2px rgba(10,25,47,0.8)}
+        .logo-r{font-size:34px;left:46px;bottom:2px;z-index:2}
+        .logo-a{font-size:34px;left:66px;bottom:2px;z-index:1}
+        .logo-text{display:flex;flex-direction:column;justify-content:center}
+        .logo-name{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:#FFFFFF;letter-spacing:1px;line-height:1.2}
+        .logo-suffix{font-family:'Inter',sans-serif;font-size:8.5px;font-weight:500;color:var(--gold);letter-spacing:1.8px;text-transform:uppercase;margin-top:2px}
+        .header-contact{color:var(--gold);border:1px solid var(--gold);padding:10px 24px;text-decoration:none;font-weight:600;font-size:14px;border-radius:4px;transition:all .3s ease;background:transparent}
+        .header-contact:hover{background-color:var(--gold);color:var(--primary)}
+        .hero{background:linear-gradient(90deg,rgba(10,25,47,0.98) 0%,rgba(10,25,47,0.85) 50%,rgba(10,25,47,0.4) 100%),url('https://images.unsplash.com/photo-1589391886645-d51941baf7fb?q=80&w=2000&auto=format&fit=crop') center/cover no-repeat;min-height:100vh;display:flex;align-items:center;padding:140px 5% 80px;position:relative}
+        .hero-content{max-width:800px;position:relative;z-index:2}
+        .hero h1{font-size:3.5rem;line-height:1.1;margin-bottom:24px;color:#FFFFFF}
+        .hero h1 span{color:var(--gold)}
+        .hero .hero-sub{font-size:1.1rem;color:var(--text-muted);margin-bottom:32px;max-width:650px;line-height:1.7}
+        .hero-badges{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:32px}
+        .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(212,175,55,0.1);border:1px solid rgba(212,175,55,0.3);color:var(--gold);padding:8px 16px;border-radius:4px;font-size:0.85rem;font-weight:500}
+        .btn-primary{display:inline-flex;align-items:center;gap:12px;background-color:var(--gold);color:var(--primary);padding:18px 36px;text-decoration:none;font-weight:700;font-size:1.1rem;border-radius:4px;transition:all .3s ease;box-shadow:0 4px 15px rgba(212,175,55,0.3);border:none;cursor:pointer}
+        .btn-primary:hover{background-color:var(--gold-hover);transform:translateY(-2px);box-shadow:0 6px 20px rgba(212,175,55,0.4)}
+        .btn-primary:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+        @media (max-width:768px){
+            .hero h1{font-size:2.5rem}
+            .header-contact{display:none}
+            .logo-mark{transform:scale(0.8);transform-origin:left;width:65px}
+            .badge{font-size:0.75rem;padding:6px 12px}
+        }
+    </style>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LegalService",
+          "@id": "https://www.joaopedroralvesadvocacia.com.br/#organization",
+          "name": "João Pedro R. Alves Sociedade Individual de Advocacia",
+          "alternateName": "JPRA Advogados",
+          "description": "Sociedade Individual de Advocacia com atuação concentrada em desbloqueio judicial de contas (SISBAJUD) e fraudes bancárias envolvendo PIX. Atendimento digital em todo o território nacional.",
+          "url": "https://www.joaopedroralvesadvocacia.com.br/",
+          "logo": "https://www.joaopedroralvesadvocacia.com.br/logo.png",
+          "areaServed": {
+            "@type": "Country",
+            "name": "Brasil"
+          },
+          "availableLanguage": ["Português"],
+          "currenciesAccepted": "BRL",
+          "paymentAccepted": "Transferência bancária, PIX",
+          "priceRange": "Sob consulta",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Áreas de Atuação",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Desbloqueio Judicial (SISBAJUD)",
+                  "description": "Atuação em pedidos de desbloqueio de contas e valores constritos via SISBAJUD, com fundamento na impenhorabilidade de verbas alimentares e mínimo existencial."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Fraudes Bancárias e PIX",
+                  "description": "Estratégia jurídica para recuperação de valores transferidos sob fraude ou golpes, acionando mecanismos como o MED do Banco Central."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Defesa em Execuções e Cobranças",
+                  "description": "Acompanhamento em ações de cobrança e execuções fiscais, garantindo que o patrimônio não sofra constrições ilegais."
+                }
+              }
+            ]
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+55-53-99181-3190",
+            "contactType": "customer service",
+            "availableLanguage": ["Português"],
+            "areaServed": "BR"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rua General Osório, 1234 - Sala 501",
+            "addressLocality": "Pelotas",
+            "addressRegion": "RS",
+            "postalCode": "96010-000",
+            "addressCountry": "BR"
+          },
+          "foundingDate": "2022",
+          "numberOfEmployees": "1",
+          "legalName": "João Pedro R. Alves Sociedade Individual de Advocacia",
+          "taxID": "53.129.260/0001-28",
+          "sameAs": [
+            "https://wa.me/5553991813190"
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://www.joaopedroralvesadvocacia.com.br/#person",
+          "name": "João Pedro R. Alves",
+          "alternateName": "João Pedro Alves",
+          "description": "Advogado com atuação concentrada em Direito Bancário, defesa patrimonial e desbloqueio judicial de contas. OAB/RS 129.198.",
+          "jobTitle": "Advogado",
+          "worksFor": {
+            "@id": "https://www.joaopedroralvesadvocacia.com.br/#organization"
+          },
+          "alumniOf": [
+            {
+              "@type": "EducationalOrganization",
+              "name": "Universidade Católica de Pelotas (UCPel)",
+              "description": "Graduação em Direito, 2019-2021"
+            },
+            {
+              "@type": "EducationalOrganization",
+              "name": "Universidade Federal de Pelotas (UFPel)",
+              "description": "Graduação em Direito, 2013-2017"
+            },
+            {
+              "@type": "EducationalOrganization",
+              "name": "Faculdade Legale",
+              "description": "Pós-graduação em Direito Previdenciário"
+            }
+          ],
+          "knowsAbout": [
+            "Direito Bancário",
+            "Desbloqueio Judicial",
+            "SISBAJUD",
+            "Fraudes PIX",
+            "MED Banco Central",
+            "Impenhorabilidade",
+            "Mínimo Existencial",
+            "Direito do Consumidor Bancário",
+            "Execuções Fiscais"
+          ],
+          "identifier": "OAB/RS 129.198",
+          "url": "https://www.joaopedroralvesadvocacia.com.br/",
+          "sameAs": [
+            "https://wa.me/5553991813190"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.joaopedroralvesadvocacia.com.br/#website",
+          "url": "https://www.joaopedroralvesadvocacia.com.br/",
+          "name": "João Pedro R. Alves Advocacia",
+          "description": "Site institucional da Sociedade Individual de Advocacia de João Pedro R. Alves. Informações sobre atuação em desbloqueio judicial e fraudes bancárias.",
+          "publisher": {
+            "@id": "https://www.joaopedroralvesadvocacia.com.br/#organization"
+          },
+          "inLanguage": "pt-BR",
+          "copyrightYear": "2026",
+          "copyrightHolder": {
+            "@id": "https://www.joaopedroralvesadvocacia.com.br/#organization"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://www.joaopedroralvesadvocacia.com.br/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Como funciona o pedido de desbloqueio judicial via SISBAJUD?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O advogado protocola petição demonstrando a ilegalidade da constrição (ex: verba de natureza alimentar, mínimo existencial, erro no SISBAJUD). O juiz pode deferir liminarmente. O prazo depende do juízo e da complexidade do caso."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "O que é o MED do Banco Central e como ele auxilia em fraudes PIX?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O Mecanismo Especial de Devolução (MED) é um procedimento do Banco Central que permite o bloqueio e a devolução de valores transferidos via PIX em casos de fraude, desde que comunicado tempestivamente. A via judicial pode ser necessária quando o MED não resolve integralmente."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quais verbas são impenhoráveis por lei?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "São impenhoráveis: salários, vencimentos, subsídios, soldos, remunerações, proventos de aposentadoria, pensões, pecúlios, montepios, quantias recebidas por liberalidade de terceiro e destinadas ao sustento do devedor e sua família, ganhos de trabalhador autônomo, e poupança até 40 salários-mínimos (Art. 833 CPC, Súmula 598 STJ)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "O atendimento digital tem a mesma validade jurídica do presencial?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim. A advocacia digital é regulamentada e utiliza procuração eletrônica, assinatura digital (ICP-Brasil) e peticionamento eletrônico (PJe, e-SAJ, etc.), com a mesma validade jurídica do atendimento presencial, observados os deveres de sigilo e segurança da informação (LGPD, Provimento 205/2021 OAB)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Como é feita a cobrança de honorários advocatícios?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Os honorários são combinados previamente com o cliente, por escrito, conforme a complexidade da causa, o tempo estimado e a tabela de honorários da OAB/RS. A primeira consulta é destinada à análise da viabilidade jurídica do caso."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <header role="banner">
+        <a href="/" class="logo-container" aria-label="João Pedro R. Alves Advocacia - Página inicial">
+            <div class="logo-mark" aria-hidden="true">
+                <span class="logo-j">J</span>
+                <span class="logo-p">P</span>
+                <span class="logo-r">R</span>
+                <span class="logo-a">A</span>
+            </div>
+            <div class="logo-text">
+                <span class="logo-name">JOÃO PEDRO R. ALVES</span>
+                <span class="logo-suffix">Sociedade Individual de Advocacia</span>
+            </div>
+        </a>
+        <a href="https://wa.me/5553991813190" class="header-contact" target="_blank" rel="noopener noreferrer" aria-label="Contato profissional via WhatsApp: (53) 99181-3190">
+            Contato profissional: (53) 99181-3190
+        </a>
+    </header>
+
+    <main role="main">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title">Atuação em desbloqueio judicial de contas e fraudes bancárias <span>(PIX)</span></h1>
+                
+                <p class="hero-sub">
+                    Sociedade Individual de Advocacia — OAB/RS 129.198 · CNPJ 53.129.260/0001-28<br>
+                    Endereço: Rua General Osório, 1234 - Sala 501, Pelotas/RS · Atendimento digital em todo o Brasil
+                </p>
+
+                <div class="hero-badges" role="list" aria-label="Informações da sociedade">
+                    <span class="badge" role="listitem">⚖️ Atuação concentrada em Direito Bancário</span>
+                    <span class="badge" role="listitem">💻 Atendimento 100% digital todo Brasil</span>
+                    <span class="badge" role="listitem">📍 Sede em Pelotas/RS</span>
+                </div>
+
+                <a href="https://wa.me/5553991813190" class="btn-primary" target="_blank" rel="noopener noreferrer" aria-label="Agendar consulta via WhatsApp: (53) 99181-3190">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"></path></svg>
+                    Agendar consulta
+                </a>
+            </div>
+        </section>
+
+        <section class="bg-light" id="especialidades" aria-labelledby="especialidades-title">
+            <div class="section-header">
+                <h2 id="especialidades-title">Áreas de Atuação</h2>
+                <p>Atuação concentrada na defesa patrimonial contra bloqueios indevidos e fraudes bancárias.</p>
+            </div>
+            <div class="grid-3">
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">🔒</div>
+                    <h3>Desbloqueio Judicial (SISBAJUD)</h3>
+                    <p>Atuação em pedidos de desbloqueio de contas e valores constritos via SISBAJUD, com fundamento na impenhorabilidade de verbas de natureza alimentar (salários, aposentadorias, pensões) e poupança até 40 salários-mínimos, bem como no mínimo existencial (Art. 833 CPC, Súmula 598 STJ).</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">💸</div>
+                    <h3>Fraudes Bancárias e PIX</h3>
+                    <p>Estratégia jurídica para recuperação de valores transferidos sob fraude ou golpes, acionando mecanismos como o Mecanismo Especial de Devolução (MED) do Banco Central e, quando necessário, medidas judiciais cautelares para bloqueio de valores em contas de terceiros.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">⚖️</div>
+                    <h3>Defesa em Execuções e Cobranças</h3>
+                    <p>Acompanhamento rigoroso em ações de cobrança, execuções de título extrajudicial e execuções fiscais, verificando a legalidade das constrições patrimoniais e apresentando as impugnações e embargos cabíveis.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="metodologia" aria-labelledby="metodologia-title">
+            <div class="section-header">
+                <h2 id="metodologia-title">Metodologia de Trabalho</h2>
+                <p>Como a sociedade estrutura a atuação nos casos de sua competência.</p>
+            </div>
+            <div class="grid-3">
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">📋</div>
+                    <h3>1. Análise Preliminar</h3>
+                    <p>Recebimento da documentação e relato do cliente. Verificação da viabilidade jurídica, identificação da tese processual adequada e estimativa de prazos e custos.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">📝</div>
+                    <h3>2. Estratégia Processual</h3>
+                    <p>Definição da medida judicial mais adequada (mandado de segurança, ação de obrigação de fazer, embargos, exceção de pré-executividade, etc.) e elaboração das peças processuais.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">⚖️</div>
+                    <h3>3. Acompanhamento Processual</h3>
+                    <p>Protocolo da petição inicial ou peça de defesa, acompanhamento de prazos, audiências, recursos e diligências até a solução final, mantendo o cliente informado de cada movimentação relevante.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="bg-light" id="faq" aria-labelledby="faq-title">
+            <div class="section-header">
+                <h2 id="faq-title">Dúvidas Frequentes</h2>
+            </div>
+            <div class="grid-3">
+                <article class="card">
+                    <h3>Como funciona o pedido de desbloqueio judicial via SISBAJUD?</h3>
+                    <p>O advogado protocola petição demonstrando a ilegalidade da constrição (ex: verba de natureza alimentar, mínimo existencial, erro no SISBAJUD). O juiz pode deferir liminarmente. O prazo depende do juízo e da complexidade do caso.</p>
+                </article>
+                <article class="card">
+                    <h3>O que é o MED do Banco Central e como ele auxilia em fraudes PIX?</h3>
+                    <p>O Mecanismo Especial de Devolução (MED) é um procedimento do Banco Central que permite o bloqueio e a devolução de valores transferidos via PIX em casos de fraude, desde que comunicado tempestivamente. A via judicial pode ser necessária quando o MED não resolve integralmente.</p>
+                </article>
+                <article class="card">
+                    <h3>Quais verbas são impenhoráveis por lei?</h3>
+                    <p>São impenhoráveis: salários, vencimentos, subsídios, soldos, remunerações, proventos de aposentadoria, pensões, pecúlios, montepios, quantias recebidas por liberalidade de terceiro e destinadas ao sustento do devedor e sua família, ganhos de trabalhador autônomo, e poupança até 40 salários-mínimos (Art. 833 CPC, Súmula 598 STJ).</p>
+                </article>
+                <article class="card">
+                    <h3>O atendimento digital tem a mesma validade jurídica do presencial?</h3>
+                    <p>Sim. A advocacia digital é regulamentada e utiliza procuração eletrônica, assinatura digital (ICP-Brasil) e peticionamento eletrônico (PJe, e-SAJ, etc.), com a mesma validade jurídica do atendimento presencial, observados os deveres de sigilo e segurança da informação (LGPD, Provimento 205/2021 OAB).</p>
+                </article>
+                <article class="card">
+                    <h3>Como é feita a cobrança de honorários advocatícios?</h3>
+                    <p>Os honorários são combinados previamente com o cliente, por escrito, conforme a complexidade da causa, o tempo estimado e a tabela de honorários da OAB/RS. A primeira consulta é destinada à análise da viabilidade jurídica do caso.</p>
+                </article>
+                <article class="card">
+                    <h3>A sociedade atende clientes de outros estados?</h3>
+                    <p>Sim. Com estrutura 100% digital, a sociedade atende clientes em todo o território nacional, peticionando nos tribunais eletrônicos de qualquer jurisdição (PJe, e-SAJ, PROJUDI, etc.), sem necessidade de deslocamento físico.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="sobre" aria-labelledby="sobre-title">
+            <div class="section-header">
+                <h2 id="sobre-title">O Advogado</h2>
+            </div>
+            <div class="about-box">
+                <h3 style="color: var(--gold); font-size: 2rem; margin-bottom: 10px;">JOÃO PEDRO R. ALVES</h3>
+                <h4 style="color: #FFF; font-family: 'Inter', sans-serif; font-weight: 500; margin-bottom: 25px;">OAB/RS 129.198</h4>
+                <p style="color: var(--text-muted); margin-bottom: 20px; text-align: justify;">Advogado com atuação concentrada em Direito Bancário, defesa patrimonial e desbloqueio judicial de contas. Estrutura defesas técnicas com base no Código de Defesa do Consumidor, Código de Processo Civil, Lei de Execuções Fiscais e resoluções do Banco Central (incluindo o MED — Mecanismo Especial de Devolução).</p>
+                <p style="color: var(--text-muted); margin-bottom: 20px; text-align: justify;">Formação: Graduação em Direito pela Universidade Católica de Pelotas (UCPel, 2019–2021) e Universidade Federal de Pelotas (UFPel, 2013–2017). Pós-graduação em Direito Previdenciário pela Faculdade Legale. Experiência anterior como estagiário no Ministério Público do Rio Grande do Sul (MP-RS) e atuação em jornalismo jurídico (Agência em Pauta, Rádio Federal FM, TV UCPel).</p>
+                <p style="color: var(--text-muted); text-align: justify;">Com estrutura 100% digital, a <strong>João Pedro R. Alves Sociedade Individual de Advocacia</strong> (CNPJ 53.129.260/0001-28) garante agilidade no atendimento de clientes em todo o território nacional, prezando pela excelência técnica e pelo cumprimento rigoroso das normas éticas da OAB (Provimento 205/2021 e Código de Ética).</p>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>JOÃO PEDRO R. ALVES</h4>
+                <p>Sociedade Individual de Advocacia</p>
+                <p>OAB/RS: 129.198</p>
+                <p>CNPJ: 53.129.260/0001-28</p>
+                <p>Rua General Osório, 1234 - Sala 501</p>
+                <p>Pelotas/RS - CEP 96010-000</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contato Profissional</h4>
+                <a href="https://wa.me/5553991813190" target="_blank" rel="noopener noreferrer">WhatsApp: (53) 99181-3190</a>
+                <p>Atendimento digital em todo o Brasil.</p>
+                <p>Horário comercial: seg–sex, 9h–18h</p>
+            </div>
+            <div class="footer-col">
+                <h4>Foco de Atuação</h4>
+                <a href="#especialidades" aria-label="Desbloqueio Judicial (SISBAJUD)">Desbloqueio Judicial (SISBAJUD)</a>
+                <a href="#especialidades" aria-label="Fraudes Bancárias e PIX">Fraudes Bancárias e PIX</a>
+                <a href="#especialidades" aria-label="Defesa em Execuções e Cobranças">Defesa em Execuções e Cobranças</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 JOÃO PEDRO R. ALVES Sociedade Individual de Advocacia. Todos os direitos reservados. Este site possui caráter estritamente informativo, em conformidade com o Provimento 205/2021 e o Código de Ética da OAB.</p>
+        </div>
+    </footer>
+
+    <!-- JS Externo (defer) -->
+    <script src="/script.js" defer></script>
+</body>
+</html>

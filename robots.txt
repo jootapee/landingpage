@@ -1,0 +1,20 @@
+# Robots.txt para João Pedro R. Alves Advocacia
+# Conforme Provimento 205/2021 OAB - Caráter estritamente informativo
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.joaopedroralvesadvocacia.com.br/sitemap.xml
+
+# Host
+Host: https://www.joaopedroralvesadvocacia.com.br
+
+# Crawl-delay (respeitoso)
+Crawl-delay: 10
+
+# Não indexar áreas administrativas (não existem neste site estático)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /*.xml$

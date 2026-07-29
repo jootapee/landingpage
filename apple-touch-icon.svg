@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="180" height="180">
+  <!-- Background -->
+  <rect width="180" height="180" rx="36" fill="#0A192F"/>
+  <rect width="172" height="172" x="4" y="4" rx="32" fill="none" stroke="#D4AF37" stroke-width="3"/>
+  
+  <!-- JPRA Monogram -->
+  <text x="90" y="122" font-family="Georgia, serif" font-weight="bold" font-size="90" 
+        fill="#D4AF37" text-anchor="middle" dominant-baseline="central" 
+        letter-spacing="-4px">JPRA</text>
+  
+  <!-- Accent line -->
+  <line x1="45" y1="135" x2="135" y2="135" stroke="#D4AF37" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+</svg>

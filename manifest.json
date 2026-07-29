@@ -1,0 +1,27 @@
+{
+  "name": "João Pedro R. Alves Advocacia",
+  "short_name": "JPRA Advogados",
+  "description": "Sociedade Individual de Advocacia - Atuação em desbloqueio judicial (SISBAJUD) e fraudes bancárias (PIX). OAB/RS 129.198.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#060d1a",
+  "theme_color": "#0A192F",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["business", "finance", "legal"],
+  "lang": "pt-BR",
+  "dir": "ltr"
+}
