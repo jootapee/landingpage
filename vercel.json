@@ -1,7 +1,5 @@
 {
-  "build": {
-    "outputDirectory": "."
-  },
+  "outputDirectory": ".",
   "headers": [
     {
       "source": "/(.*)",
